@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>cadstro volta dos sonhos</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero">
+        <div class="hero__content">
+          <span class="eyebrow">Cadastro de clientes</span>
+          <h1>cadstro volta dos sonhos</h1>
+          <p>
+            Preencha os dados abaixo para registrar novos clientes na planilha de
+            atendimento. Os dados serão enviados diretamente para o Google Sheets.
+          </p>
+        </div>
+        <div class="hero__card">
+          <form id="cadastro-form">
+            <label class="field">
+              <span>Nome completo</span>
+              <input type="text" name="nome" placeholder="Ex: Maria Santos" required />
+            </label>
+
+            <label class="field">
+              <span>Número de telefone</span>
+              <input
+                type="tel"
+                name="telefone"
+                placeholder="(11) 91234-5678"
+                required
+              />
+            </label>
+
+            <label class="field">
+              <span>E-mail</span>
+              <input type="email" name="email" placeholder="maria@email.com" required />
+            </label>
+
+            <label class="field">
+              <span>Número de cadastro</span>
+              <input
+                type="text"
+                name="cadastro"
+                placeholder="Ex: 000123"
+                required
+              />
+            </label>
+
+            <button type="submit">Enviar cadastro</button>
+            <p class="status" id="status-message" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="info">
+        <div class="info__item">
+          <h2>Campos obrigatórios</h2>
+          <p>
+            Garantimos que nome, telefone, e-mail e número de cadastro sejam
+            preenchidos corretamente antes do envio.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
