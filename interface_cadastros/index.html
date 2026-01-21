@@ -17,40 +17,69 @@
       <section class="hero">
         <div class="hero__content">
           <span class="eyebrow">Cadastro de clientes</span>
-          <h1>cadstro volta dos sonhos</h1>
+          <h1>cadastro vídeos e fotos</h1>
           <p>
             Preencha os dados abaixo para registrar novos clientes na planilha de
             atendimento. Os dados serão enviados diretamente para o Google Sheets.
           </p>
         </div>
+
         <div class="hero__card">
           <form id="cadastro-form">
             <label class="field">
               <span>Nome completo</span>
-              <input type="text" name="nome" placeholder="Ex: Maria Santos" required />
+              <input
+                id="nome"
+                type="text"
+                name="nome"
+                placeholder="Ex: Maria Santos"
+                autocomplete="name"
+                required
+              />
             </label>
 
             <label class="field">
               <span>Número de telefone</span>
               <input
+                id="telefone"
                 type="tel"
                 name="telefone"
-                placeholder="(11) 91234-5678"
+                placeholder="(11)91234-5678"
+                autocomplete="tel"
                 required
               />
             </label>
 
             <label class="field">
               <span>E-mail</span>
-              <input type="email" name="email" placeholder="maria@email.com" required />
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="maria@email.com"
+                autocomplete="email"
+                required
+              />
             </label>
 
             <label class="field">
               <span>Número de cadastro</span>
               <input
+                id="cadastro"
                 type="text"
                 name="cadastro"
                 placeholder="Ex: 000123"
+                required
+              />
+            </label>
+
+            <label class="field">
+              <span>Carro</span>
+              <input
+                id="carro"
+                type="text"
+                name="carro"
+                placeholder="Camaro, Ferrari ou Porsche"
                 required
               />
             </label>
